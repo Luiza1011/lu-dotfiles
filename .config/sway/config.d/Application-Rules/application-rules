@@ -1,0 +1,37 @@
+include $HOME/.local/lu-dotfiles/.config/sway/config.d/keywords
+
+#app_id rules
+for_window [app_id="azote"] sticky enable, 
+
+#class rules { for_window [class=""] }
+for_window [class="firefox"] floating disabled
+for_window [class="Code"] floating disabled
+for_window [class="discord"] floating disabled
+for_window [class="Minecraft*"] floating disabled
+for_window [class="REAPER"] floating disable
+for_window [class="Gimp-2.10"] floating disable
+
+#title rules
+for_window [title="Picture-in-Picture"] floating enable, sticky enable
+for_window [title="Steam"] floating disable
+for_window [title="FX"] floating enabled
+
+
+#---------------------WORKSPACE RULES----------------------#
+#workspace 1
+assign [class="VencordDesktop"] 1
+assign [class="discord"] 1
+
+#workspace 2
+assign [class="REAPER"] 2
+#assign [class="whatsdesk"] 2
+#assign [app_id="FFPWA-01GZGZBKBMRD4WXVKX67YZ7AHV"] 2
+
+#workspace 3
+assign [class="firefox"] 3
+
+#workspace 4
+assign [class="Code"] 4
+
+#assign [class="Spotify"] 11
+#assign [app_id="kitty"] 10

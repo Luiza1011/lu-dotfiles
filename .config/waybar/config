@@ -1,0 +1,35 @@
+[
+{
+"mode": "dock",
+"name": "top-bar",
+"layer": "top",
+"position":"top",
+"spacing": 0,
+"fixed-center": true,
+"margin-left": 0,
+"margin-right": 0,
+
+	"modules-left": ["tray",],
+	"modules-center": ["custom/loop","custom/previous","custom/media","custom/next","custom/shuffle"],
+	"modules-right": ["custom/notification","clock"],
+
+"include": "~/.local/lu-dotfiles/components/waybar-components/Module.json",
+},
+{
+	"mode": "dock",
+	"name": "bottom-bar",
+	"layer": "top",
+	"position":"bottom",
+	"width":0,
+	"spacing": 0,
+	"fixed-center": true,
+	"margin-left": 0,
+	"margin-right": 0,
+	
+		"modules-left": ["custom/launcher","sway/workspaces"],
+		"modules-center": ["wlr/taskbar"],
+		"modules-right": ["custom/scratchpad_indicator","pulseaudio","battery"],
+	
+	"include": "~/.local/lu-dotfiles/components/waybar-components/Module.json",
+	},
+]

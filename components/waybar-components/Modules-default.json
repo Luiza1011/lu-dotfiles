@@ -1,0 +1,120 @@
+{
+//========================== DEFAULT MODULES ========================//
+"sway/workspaces": {
+  "format": "{icon}",
+  "on-click": "activate",
+  "format-icons": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": "",
+    "10":"藍",
+    "focused": "",
+    "urgent": "",
+    "default": "",
+  },
+  "sort-by-number": true,
+  "smooth-scrolling-threshold": 2,
+  "persistent_workspaces": {
+//    "1":[],
+//    "2":[],
+//    "3":[],
+//    "4":[],
+//    "5":[],
+//    "6":[],
+//   "7":[],
+//    "8":[],
+//    "9":[],
+//    "10":[],
+  }
+    },
+
+"tray":{
+	"icon-size":18,
+	"spacing": 10
+    },
+
+"wlr/taskbar":{
+    "icon-size": 16,
+    "format":"{icon} {title} {short_state}",
+    "tooltip-format": "{app_id} | {state}",
+    "on-click": "activate",
+    "on-click-right": "minimize",
+    "on-click-middle": "maximize",
+    "ignore-list": [
+      "firefox",
+      "code-oss",
+      "Code",
+      "VencordDesktop",
+      "kitty",
+      "nemo",
+      "discord",
+      "whatsdesk",
+    ],},
+
+"sway/window": {
+    "format": "  {} ",
+    "separate-outputs": true,
+    },
+
+"battery": {
+        "on-click": "~/lu-dotfiles/.config/rofi/scripts/powermenu_t1",
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{capacity}% {icon} ",
+        "format-charging": " {capacity}% ",
+        "format-plugged": " {capacity}% ",
+        "format-full":"󰂏 ",
+//        "format-alt": "{icon}  {capacity}% ",
+        "format-icons": ["󰂎","󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹"]
+    },
+
+"clock": {
+        //"timezone": "UTC",
+        "format": "{:%I:%M %p}",
+        "on-click": "~/lu-dotfiles/.config/rofi/scripts/extra/playerctl",
+    },
+
+
+"pulseaudio":{
+  "format": " {icon} {volume}% ",
+  "format-bluetooth": "{volume}% {icon}",
+  "format-muted": "婢 0%",
+  "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", ""]
+  },
+  "scroll-step": 1,
+  "on-click": "pamixer -t",
+  "on-click-right": "pavucontrol",
+  "ignored-sinks": ["Easy Effects Sink"]
+    },
+
+"mpris": {
+	"format": "DEFAULT: {player_icon} {dynamic}",
+	"format-paused": "DEFAULT: {status_icon} <i>{dynamic}</i>",
+	"player-icons": {
+		"default": "▶",
+		"mpv": "",
+    "spotify": "阮",
+
+	},
+	"status-icons": {
+		"paused": "⏸"
+	},
+	// "ignored-players": ["firefox"]
+    },
+}

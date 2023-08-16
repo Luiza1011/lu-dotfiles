@@ -1,0 +1,13 @@
+include $HOME/.local/lu-dotfiles/.config/sway/config.d/keywords
+
+#programs
+
+bindsym $super+Shift+f      exec $files
+bindsym $super+w            exec $browser
+bindsym $super+f1           exec com.discordapp.Discord 
+bindsym $super+f2           exec com.github.eneshecan.WhatsAppForLinux 
+bindsym $super+g            exec $image
+bindsym $super+Shift+Return exec $term
+bindsym $super+e            exec $text
+bindsym $super+Shift+m      exec com.github.neithern.g4music
+bindsym Ctrl+$alt+c         exec /usr/lib/gpaste/gpaste-ui

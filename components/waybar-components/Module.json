@@ -1,0 +1,253 @@
+//========================== CUSTOM MODULES ========================//
+{    
+  "custom/separator":{
+    "format":"|",
+  },
+
+  "custom/power":{
+    "format": " ",
+    "on-click": "~/.config/sway/scripts/Rofi/Scripts/archcraft/powermenu",
+    },
+  
+  "custom/updater":{
+    "format": " {}",
+    "exec": "checkupdates | wc -l",
+    "exec-if": "[[ $(checkupdates | wc -l) ]]",
+    "interval": 5,
+    "on-click": "kitty -e yay --noconfirm && flatpak update -y && notify-send 'The system has been updated'"
+    },
+
+    
+  "custom/waybar-mpris": {
+    "return-type": "json",
+    "exec": "waybar-mpris --position --autofocus",
+    "on-click": "waybar-mpris --send toggle",
+      // This option will switch between players on right click.
+          "on-click-right": "waybar-mpris --send player-next",
+      // The options below will switch the selected player on scroll
+          // "on-scroll-up": "waybar-mpris --send player-next",
+          // "on-scroll-down": "waybar-mpris --send player-prev",
+      // The options below will go to next/previous track on scroll
+          // "on-scroll-up": "waybar-mpris --send next",
+          // "on-scroll-down": "waybar-mpris --send prev",
+      "escape": true,
+  },
+  
+  "custom/notification": {
+     "tooltip": false,
+     "format": " {icon} ",
+     "format-icons": {
+          "notification": "<span foreground='red'><sup></sup></span>",
+          "none": "",
+          "dnd-notification": "<span foreground='red'><sup></sup></span>",
+          "dnd-none": "",
+          "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+          "inhibited-none": "",
+          "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+          "dnd-inhibited-none": ""
+     },
+     "return-type": "json",
+     "exec-if": "which swaync-client",
+     "exec": "swaync-client -swb",
+     "on-click": "swaync-client -t -sw",
+     "on-click-right": "swaync-client -d -sw",
+     "escape": true
+ },
+
+ "custom/scratchpad_indicator": {
+  "interval": 3,
+  "exec": "swaymsg -t get_tree | ~/lu-dotfiles/components/waybar-script/scratchpad-indicator",
+  "format": "{} ",
+  "on-click": "swaymsg 'scratchpad show'",
+  "on-click-right": "swaymsg 'move scratchpad'"
+},
+
+//========================== LAUNCHER MODULES ========================//
+
+  "custom/launcher":{
+    "format":"󰣇 Menu",
+    "on-click": "~/.local/lu-dotfiles/.config/rofi/scripts/launcher_t1",
+    "on-click-right": "~/lu-dotfiles/.config/rofi/scripts/extra/Utils",
+    "on-click-middle": "killall waybar && waybar"
+    },
+
+  "custom/azote": {
+    "format":"󰏜",
+    "on-click": "azote"
+    },
+
+  "custom/droidcam":{
+    "format":"",
+      "on-click": "/home/luiza/Lu-dots/Extra/scripts/Droidcamshit",
+    },
+
+//========================== MEDIA MODULES ========================//
+"custom/media": {
+  "format": "{icon}{}",
+  "return-type": "json",
+  "format-icons": {
+      "Playing": " ",
+      "Paused": " ",
+  },
+  "max-length":70,
+  "exec": "playerctl -a metadata --format '{\"text\": \"{{markup_escape(title)}}\"}' -F",
+  "on-click": "playerctl play-pause",
+  },
+
+"custom/next":{
+  "format": "  ",
+  "on-click": "playerctl next",
+},
+
+"custom/previous": {  
+  "format": "  ",
+  "on-click": "playerctl previous",
+}, 
+
+"custom/shuffle":{
+  "format": "{icon}",
+  "return-type": "json",
+  "format-icons": {
+      "true": "  ",
+      "false": " ",
+  },
+  "max-length":70,
+  "exec": "playerctl -a metadata --format '{\"text\": \"{{shuffle}}\", \"alt\": \"{{shuffle}}\", \"class\": \"{{shuffle}}\"}' -F",
+  "on-click": "playerctl shuffle toggle",
+},
+"custom/loop":{  
+  "format": "{icon}",
+  "return-type": "json",
+  "format-icons": {
+    "Playlist": "  ",
+    "Track": "  ",
+    "None": "  ",
+  },
+  "max-length":70,
+  "exec": "playerctl -a metadata --format '{\"text\": \"{{loop}}\", \"alt\": \"{{loop}}\", \"class\": \"{{loop}}\"}' -F",
+  "on-click": "playerctl loop none",
+  "on-click-right": "playerctl loop playlist",
+  "on-click-middle": "playerctl loop track",
+},
+
+//========================== DEFAULT MODULES ========================//
+"sway/workspaces": {
+  "format": "{icon}",
+  "on-click": "activate",
+  "format-icons": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": "",
+    "10":"藍",
+    "focused": "",
+    "urgent": "",
+    "default": "",
+  },
+  "sort-by-number": true,
+  "smooth-scrolling-threshold": 2,
+  "persistent_workspaces": {
+//    "1":[],
+//    "2":[],
+//    "3":[],
+//    "4":[],
+//    "5":[],
+//    "6":[],
+//   "7":[],
+//    "8":[],
+//    "9":[],
+//    "10":[],
+  }
+    },
+
+"tray":{
+	"icon-size":18,
+	"spacing": 10
+    },
+
+"wlr/taskbar":{
+    "icon-size": 16,
+    "format":"{icon} {title} {short_state}",
+    "tooltip-format": "{app_id} | {state}",
+    "on-click": "activate",
+    "on-click-right": "minimize",
+    "on-click-middle": "maximize",
+    "ignore-list": [
+      "firefox",
+      "code-oss",
+      "Code",
+      "kitty",
+      "nemo",
+      "pavucontrol",
+      "REAPER",
+      "Spotify",
+      "deadbeef",
+      "discord"
+    ],},
+
+"sway/window": {
+    "format": "  {} ",
+    "separate-outputs": true,
+    },
+
+"battery": {
+        "on-click": "~/.local/lu-dotfiles/.config/rofi/scripts/powermenu_t1",
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{capacity}% {icon} ",
+        "format-charging": " {capacity}% ",
+        "format-plugged": " {capacity}% ",
+        "format-full":"󰂏 ",
+//        "format-alt": "{icon}  {capacity}% ",
+        "format-icons": ["󰂎","󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹"]
+    },
+
+"clock": {
+        //"timezone": "UTC",
+        "format": "{:%I:%M %p}",
+        "on-click": "~/lu-dotfiles/.config/rofi/scripts/extra/playerctl",
+    },
+
+
+"pulseaudio":{
+  "format": " {icon} {volume}% ",
+  "format-bluetooth": "{volume}% {icon}",
+  "format-muted": "婢 0%",
+  "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", ""]
+  },
+  "scroll-step": 1,
+  "on-click": "pamixer -t",
+  "on-click-right": "sh ~/.local/lu-dotfiles/components/toggles/pavucontrol-scratchpad",
+  "ignored-sinks": ["Easy Effects Sink"]
+    },
+
+"mpris": {
+	"format": "DEFAULT: {player_icon} {dynamic}",
+	"format-paused": "DEFAULT: {status_icon} <i>{dynamic}</i>",
+	"player-icons": {
+		"default": "▶",
+		"mpv": "",
+    "spotify": "阮",
+
+	},
+	"status-icons": {
+		"paused": "⏸"
+	},
+	// "ignored-players": ["firefox"]
+    },
+}
