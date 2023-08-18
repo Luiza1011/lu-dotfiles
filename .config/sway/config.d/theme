@@ -8,7 +8,7 @@ gaps inner 3
 gaps outer 3
 
 # Hide titlebar on windows (normal|none|pixel):
-default_border normal 2
+default_border pixel 2
 
 # Default Font
 font pango: 'URW Gothic' 12

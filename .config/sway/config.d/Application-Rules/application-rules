@@ -13,7 +13,7 @@ for_window [class="Gimp-2.10"] floating disable
 
 #title rules
 for_window [title="Picture-in-Picture"] floating enable, sticky enable
-for_window [title="Steam"] floating disable
+for_window [title="Steam"] floating enable
 for_window [title="FX"] floating enabled
 
 
@@ -28,10 +28,10 @@ assign [class="REAPER"] 2
 #assign [app_id="FFPWA-01GZGZBKBMRD4WXVKX67YZ7AHV"] 2
 
 #workspace 3
-assign [class="firefox"] 3
+#assign [class="firefox"] 3
 
 #workspace 4
-assign [class="Code"] 4
+#assign [class="Code"] 4
 
 #assign [class="Spotify"] 11
 #assign [app_id="kitty"] 10

@@ -23,13 +23,13 @@ exec ~/.local/lu-dotfiles/.config/sway/scripts/sway-systemd/assign-cgroups.py
 
 exec autotiling 
 #exec vencord
-exec discord
+exec flatpak run com.discordapp.Discord
 exec steam -nochatui -nofriendsui -silent
 
-exec kitty
+exec terminator
 exec nemo
 exec pavucontrol
-exec spotify-launcher
+exec flatpak run com.spotify.Client
 
 # Sway Fader
 # exec python3 ~/.config/sway/scripts/endeavour/swayfader.py      

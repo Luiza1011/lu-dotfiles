@@ -10,4 +10,6 @@ shadows on
 shadow_blur_radius 30
 shadow_color #000000dd
 
+scratchpad_minimize enable
+
 # default_dim_inactive 0.3
