@@ -1,7 +1,7 @@
 include $HOME/.local/lu-dotfiles/.config/sway/config.d/keywords
 
 # Auth with polkit-gnome:
-exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec /usr/libexec/polkit-gnome-authentication-agent-1
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 
 # Desktop notifications
@@ -25,6 +25,7 @@ exec autotiling
 #exec vencord
 exec flatpak run com.discordapp.Discord
 exec steam -nochatui -nofriendsui -silent
+exec /bin/navidrome --configfile "/home/luiza/.config/navidrome.toml"
 
 exec terminator
 exec nemo

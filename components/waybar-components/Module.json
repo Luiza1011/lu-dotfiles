@@ -172,7 +172,7 @@
 
 "wlr/taskbar":{
     "icon-size": 16,
-    "format":"{icon} {title} {short_state}",
+    "format":"{icon} {name} {short_state}",
     "tooltip-format": "{app_id} | {state}",
     "on-click": "activate",
     "on-click-right": "minimize",
@@ -187,7 +187,8 @@
       "REAPER",
       "Spotify",
       "deadbeef",
-      "discord"
+      "discord",
+      "Vivaldi-stable"
     ],},
 
 "sway/window": {

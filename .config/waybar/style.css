@@ -23,6 +23,8 @@ window#waybar.bottom-bar {
     border-radius: 100px;
     /*border: 1px solid;
     border-color: @light-blue;*/
+    margin-left: 2px;
+    margin-right: 2px;
     padding-left: 4px;
     padding-right: 4px;
 }
@@ -33,7 +35,8 @@ window#waybar.bottom-bar {
     border-radius: 100px;
     /*border: 1px solid;
     border-color: @light-blue;*/
-    margin: 3px;
+    margin-left: 2px;
+    margin-right: 2px;
     padding-left: 4px;
     padding-right: 4px;
 }
@@ -55,9 +58,10 @@ window#waybar.bottom-bar {
     margin-right: 2px;
     /*border: 1px solid;
     border-color: @light-blue;*/
+    margin-left: 2px;
+    margin-right: 2px;
     padding-left: 4px;
     padding-right: 4px;
-    padding-top:3px;
 }
 
 #custom-waybar-mpris{
@@ -77,21 +81,20 @@ window#waybar.bottom-bar {
     color: #fddab6;
 
     font-size: 14px;
-    margin-left: 4px;
-    margin-right: 4px;
+    margin-left: 2px;
+    margin-right: 2px;
     padding-left: 4px;
     padding-right: 4px;
-    padding-top:3px;
 }
 
 #custom-droidcam{  
 
     /*border: 1px solid;
     border-color: @light-blue;*/
-    margin: 3px;
+    margin-left: 2px;
+    margin-right: 2px;
     padding-left: 4px;
     padding-right: 4px;
-    padding-top:3px;
 }
 
 #custom-notification {
@@ -112,7 +115,6 @@ window#waybar.bottom-bar {
     margin-right: 2px;
     padding-left: 4px;
     padding-right: 4px;
-    padding-top:3px;
 }
 
 /*DEFAULT WAYBAR PLUGINS*/
@@ -121,10 +123,10 @@ window#waybar.bottom-bar {
     border-radius: 100px;
     /*border: 1px solid;
     border-color: @light-blue;*/
-    margin: 0px;
+    margin-left: 2px;
+    margin-right: 2px;
     padding-left: 4px;
     padding-right: 4px;
-    padding-top:3px;
 }
 
 #window{    
@@ -132,10 +134,10 @@ window#waybar.bottom-bar {
     border-color: @light-blue;*/
     color:#e87abc;
     font-size: 15px;
-    margin: 3px;
+    margin-left: 2px;
+    margin-right: 2px;
     padding-left: 4px;
     padding-right: 4px;
-    padding-top:3px;
 }
 
 #battery{    
@@ -146,8 +148,8 @@ window#waybar.bottom-bar {
     /*border: 1px solid;
     border-color: @light-blue;*/
     font-size: 15px;
-    margin: 0px;
     margin-left: 2px;
+    margin-right: 2px;
     padding-left: 4px;
     padding-right: 4px;
 }
@@ -160,7 +162,8 @@ window#waybar.bottom-bar {
     /*border: 1px solid;
     border-color: @light-blue;*/
     margin-left: 2px;
-    padding-left: 6px;
+    margin-right: 2px;
+    padding-left: 4px;
     padding-right: 4px;
     padding-top:3px;
 }
@@ -188,7 +191,6 @@ window#waybar.bottom-bar {
     margin-right: 4px;
     padding-left: 4px;
     padding-right: 4px;
-    padding-top:3px;
 }
 
 #taskbar{
@@ -196,33 +198,30 @@ window#waybar.bottom-bar {
     color: #ffd9b8;
     font-size: 13px;
     border-radius: 100px;
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-left: 2px;
+    margin-right: 2px;
     padding-left: 4px;
     padding-right: 4px;
-    padding-top:3px;
 }
 
 #taskbar button.active{    
     background-color: rgb(24, 24, 24);
     color: #88ddff;
     border-radius: 100px;
-    margin-left: 4px;
-    margin-right: 4px;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-top:3px;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 #taskbar button.minimized{
     background-color: rgb(24, 24, 24);
     color: #f7af78;
     border-radius: 100px;
-    margin-left: 4px;
-    margin-right: 4px;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-top:3px;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 
@@ -232,8 +231,8 @@ window#waybar.bottom-bar {
 #workspaces{    
     background-color: rgb(24, 24, 24);
     border-radius: 100px;
-    margin-left: 4px;
-    margin-right: 4px;
+    margin-left: 2px;
+    margin-right: 2px;
     padding-left: 4px;
     padding-right: 4px;
 
@@ -248,8 +247,8 @@ window#waybar.bottom-bar {
 #workspaces button.visible{
     background-color: #ff9b55;
     border-radius: 100px;
-    margin-left: 4px;
-    margin-right: 4px;
+    margin-left: 2px;
+    margin-right: 2px;
     padding-left: 4px;
     padding-right: 4px;
 
