@@ -177,19 +177,7 @@
     "on-click": "activate",
     "on-click-right": "minimize",
     "on-click-middle": "maximize",
-    "ignore-list": [
-      "firefox",
-      "code-oss",
-      "Code",
-      "kitty",
-      "nemo",
-      "pavucontrol",
-      "REAPER",
-      "Spotify",
-      "deadbeef",
-      "discord",
-      "Vivaldi-stable"
-    ],},
+    "ignore-list": ["pavucontrol","Spotify","nemo"],},
 
 "sway/window": {
     "format": "  {} ",
