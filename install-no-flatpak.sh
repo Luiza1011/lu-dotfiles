@@ -20,3 +20,5 @@ ln -r -s ~/.local/lu-dotfiles/.themes/ ~/
 echo 'linking .themes folder to user folder'
 ln -r -s ~/.local/lu-dotfiles/.icons/ ~/
 echo 'linking .icons folder to user folder'
+
+reboot
