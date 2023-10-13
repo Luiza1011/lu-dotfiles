@@ -68,9 +68,10 @@ alias yta-mp3="yt-dlp --extract-audio --audio-format mp3 "
 alias ytv-best="yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "
 
 #------------------------- Gen aliases ------------------------#
-alias l="exa -1 --icons -a -g -B -H"
-alias ls="exa -1 --icons -g -B -H"
+alias l="eza -1 --icons -a -g -B -H"
+alias ls="eza -1 --icons -g -B -H"
 alias cp='rsync -ah --info=progress2'
+alias mv='mv -w'
 alias mnt="mount | awk -F' ' '{ printf \"%s\t%s\n\",\$1,\$3; }' | column -t | egrep ^/dev/ | sort"
 alias rmv='mv --force -t ~/.local/share/Trash '
 
