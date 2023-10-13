@@ -54,3 +54,5 @@ flatpak install org.telegram.desktop                         -y --reinstall --sy
 
 #containers
 toolbox create --image quay.io/toolbx-images/archlinux-toolbox:latest arch-box
+
+reboot
