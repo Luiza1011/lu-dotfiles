@@ -9,7 +9,7 @@ echo 'linking swaync to .config'
 ln -r -s ~/.local/lu-dotfiles/.config/waybar/ ~/.config/
 echo 'linking waybar to .config'
 
-ln -r -s ~/.local/lu-dotfiles/.config/rofi / ~/.config/
+ln -r -s ~/.local/lu-dotfiles/.config/rofi/ ~/.config/
 echo 'linking rofi to .config'
 
 ln -r -s ~/.local/lu-dotfiles/.zshrc ~/
