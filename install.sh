@@ -21,6 +21,7 @@ echo 'linking .themes folder to user folder'
 ln -r -s ~/.local/lu-dotfiles/.icons/ ~/
 echo 'linking .icons folder to user folder'
 
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 flatpak install com.calibre_ebook.calibre                    -y --reinstall --system
 flatpak install com.discordapp.Discord                       -y --reinstall --system
