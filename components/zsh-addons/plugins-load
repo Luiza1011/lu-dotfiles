@@ -1,0 +1,13 @@
+autoload -Uz compinit
+compinit
+
+source ~/.local/lu-dotfiles/components/zsh-addons/plugins/zsh-autocomplete/zsh-autosuggestions.zsh
+
+source ~/.local/lu-dotfiles/components/zsh-addons/plugins/zsh-interactive-cd.plugin.zsh
+
+source ~/.local/lu-dotfiles/components/zsh-addons/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+source ~/.local/lu-dotfiles/components/zsh-addons/plugins/zsh-history
+
+fpath=(.local/lu-dotfiles/components/zsh-addons/plugins/zsh-completions/src $fpath)
+source ~/.local/lu-dotfiles/components/zsh-addons/plugins/zsh-completions/zsh-completions.plugin.zsh

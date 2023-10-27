@@ -57,8 +57,8 @@ alias calibre='flatpak run com.calibre_ebook.calibre'
 alias steam='flatpak run com.valvesoftware.Steam'
 
 #------------------------- git aliases ------------------------#
-alias clone='git -C ~/bulkstorage/GIT clone'
-alias git-path='cd ~/bulkstorage/GIT && ls'
+alias clone='git -C ~/.extra/GIT clone'
+alias git-path='cd ~/.extra/GIT && ls'
 
 #------------------------ YT DOWNLOADER -----------------------#
 alias yta-aac="yt-dlp --extract-audio --audio-format aac "

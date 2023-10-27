@@ -2,6 +2,7 @@ include $HOME/.local/lu-dotfiles/.config/sway/config.d/keywords
 
 #app_id rules
 for_window [app_id="foot"] floating enabled, sticky enable, resize set width 30 ppt height 20 ppt
+for_window [app_id="file-roller"] floating enabled
 
 #class rules { for_window [class=""] }
 for_window [class="firefox"] floating disabled
@@ -15,8 +16,7 @@ for_window [class="reaper_host32"] floating enabled
 #for_window [app_id="org.prismlauncher.PrismLauncher"] floating enable
 #title rules
 for_window [title="Picture-in-Picture"] floating enable, sticky enable
-for_window [title="Steam"] floating enable
-for_window [class="reaper_host32"] floating enabled, resize set width 30 ppt height 20 ppt
+for_window [class="reaper_host32"] floating enabled
 
 
 #---------------------WORKSPACE RULES----------------------#
@@ -33,7 +33,7 @@ assign [class="REAPER"] 2
 #assign [class="firefox"] 3
 
 #workspace 4
-#assign [class="Code"] 4
+assign [class="Code"] 4
 
 assign [title="Minecraft*"] 11
 assign [app_id="org.prismlauncher.PrismLauncher"] 11

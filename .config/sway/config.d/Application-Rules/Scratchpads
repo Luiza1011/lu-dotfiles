@@ -8,7 +8,7 @@ include $HOME/.local/lu-dotfiles/.config/sway/config.d/keywords
     for_window [app_id="org.gnome.clocks"] move scratchpad, border pixel 2
     for_window [app_id="org.gabmus.gfeeds"] move scratchpad, sticky enable, resize set width 80 ppt height 50 ppt, border pixel 2
     for_window [class="VencordDesktop"] sticky enable, resize set width 100 ppt height 50 ppt
-
+    for_window [app_id="emote"] sticky enable, border pixel 2
 
 #scratchpads complex
     #(specific terminal thing)
