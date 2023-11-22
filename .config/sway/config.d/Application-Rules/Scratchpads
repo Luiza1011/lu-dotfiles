@@ -20,8 +20,9 @@ include $HOME/.local/lu-dotfiles/.config/sway/config.d/keywords
     bindsym $super+f [app_id="nemo"] scratchpad show
 
     #(Spotify stuff)
-    for_window [class="Spotify"] move scratchpad, floating enabled, sticky enable, resize set width 80 ppt height  70 ppt
-    bindsym $super+m [class="Spotify"] scratchpad show
+    for_window [app_id="dev.alextren.Spot"] move scratchpad, sticky enable, resize set width 80 ppt height  70 ppt
+    bindsym $super+m [app_id="dev.alextren.Spot"] scratchpad show
+    bindsym $super+Shift+m exec flatpak run dev.alextren.Spot && sway [app_id="dev.alextren.Spot"] scratchpad show
 
     #(deadbeef stuff)
     for_window [app_id="deadbeef"] floating enabled, sticky enable

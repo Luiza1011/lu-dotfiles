@@ -66,7 +66,7 @@
 
   "custom/launcher":{
     "format":"󰣇 Menu",
-    "on-click": "~/.local/lu-dotfiles/.config/rofi/scripts/launcher_t1",
+    "on-click": "~/.local/lu-dotfiles/.config/rofi/scripts/launcher_t3",
     "on-click-right": "~/lu-dotfiles/.config/rofi/scripts/extra/Utils",
     "on-click-middle": "killall waybar && waybar"
     },
@@ -173,7 +173,7 @@
 "wlr/taskbar":{
     "icon-size": 16,
     "format":"{icon} {name} {short_state}",
-    "tooltip-format": "{app_id} | {state}",
+    "tooltip-format": "{title} {app_id} | {state}",
     "on-click": "activate",
     "on-click-right": "minimize",
     "on-click-middle": "maximize",
