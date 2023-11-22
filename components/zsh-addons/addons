@@ -78,7 +78,7 @@ alias mv='mv -w'
 alias mnt="mount | awk -F' ' '{ printf \"%s\t%s\n\",\$1,\$3; }' | column -t | egrep ^/dev/ | sort"
 alias rmv='mv --force -t ~/.local/share/Trash '
 alias aliases='compgen -a'
-alias flac-mp3='find -name "*.flac" -exec ffmpeg -i {} -map_metadata 0 -id3v2_version -acodec libmp3lame -ab 128k {}.mp3 \;'
+alias flac-mp3='find -name "*.flac" -exec ffmpeg -i {} -map_metadata 0 -acodec libmp3lame -ab 128k {}.mp3 \;'
 
 
 #------------------------- file-aliases -----------------------#
