@@ -39,3 +39,5 @@ exec pavucontrol
 
 # Sway Fader
 # exec python3 ~/.config/sway/scripts/endeavour/swayfader.py      
+
+exec spotifyd -u elatetunic@gmail.com --use-mpris true -d PC-DAEMON --device-type speaker --volume-normalisation --autoplay --use-keyring
