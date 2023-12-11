@@ -1,6 +1,7 @@
 #---------------------------- path ---------------------------#
 export PATH=$PATH:$HOME/.local/bin
-
+export PATH=$PATH:/lib/golang/bin
+export PATH=$PATH:$HOME/.local/share/apx/distrobox/bin
 #--------------------------- scripts -------------------------#
 function myip() {
 	curl http://icanhazip.com	

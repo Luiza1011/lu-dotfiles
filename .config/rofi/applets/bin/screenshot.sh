@@ -11,34 +11,17 @@ theme="$type/$style"
 
 # Theme Elements
 prompt='Screenshot'
-mesg="DIR: `xdg-user-dir PICTURES`/Screenshots"
+mesg="Screenshot tool"
 
-if [[ "$theme" == *'type-1'* ]]; then
-	list_col='1'
-	list_row='5'
-	win_width='400px'
-elif [[ "$theme" == *'type-3'* ]]; then
-	list_col='1'
-	list_row='5'
-	win_width='120px'
-elif [[ "$theme" == *'type-5'* ]]; then
-	list_col='1'
-	list_row='5'
-	win_width='520px'
-elif [[ ( "$theme" == *'type-2'* ) || ( "$theme" == *'type-4'* ) ]]; then
-	list_col='5'
-	list_row='1'
-	win_width='670px'
-fi
 
 # Options
-layout=`cat ${theme} | grep 'USE_ICON' | cut -d'=' -f2`
+layout=`cat ${theme} | grep 'USE_ICON' | cut -d'=' -f2`;
 if [[ "$layout" == 'NO' ]]; then
 	option_1=" Capture Desktop"
 	option_2=" Capture Area"
-	option_3=" Capture Window"
-	option_4=" Capture in 5s"
-	option_5=" Capture in 10s"
+	option_3=" Capture-Window"
+	option_4=" Capture-Area"
+	option_5=" Capture-Desktop"
 else
 	option_1=""
 	option_2=""
@@ -64,67 +47,26 @@ run_rofi() {
 	echo -e "$option_1\n$option_2\n$option_3\n$option_4\n$option_5" | rofi_cmd
 }
 
-# Screenshot
-time=`date +%Y-%m-%d-%H-%M-%S`
-geometry=`xrandr | grep 'current' | head -n1 | cut -d',' -f2 | tr -d '[:blank:],current'`
-dir="`xdg-user-dir PICTURES`/Screenshots"
-file="Screenshot_${time}_${geometry}.png"
-
-if [[ ! -d "$dir" ]]; then
-	mkdir -p "$dir"
-fi
-
-# notify and view screenshot
-notify_view() {
-	notify_cmd_shot='dunstify -u low --replace=699'
-	${notify_cmd_shot} "Copied to clipboard."
-	viewnior ${dir}/"$file"
-	if [[ -e "$dir/$file" ]]; then
-		${notify_cmd_shot} "Screenshot Saved."
-	else
-		${notify_cmd_shot} "Screenshot Deleted."
-	fi
-}
-
-# Copy screenshot to clipboard
-copy_shot () {
-	tee "$file" | xclip -selection clipboard -t image/png
-}
-
-# countdown
-countdown () {
-	for sec in `seq $1 -1 1`; do
-		dunstify -t 1000 --replace=699 "Taking shot in : $sec"
-		sleep 1
-	done
-}
 
 # take shots
 shotnow () {
-	cd ${dir} && sleep 0.5 && maim -u -f png | copy_shot
-	notify_view
+	grim - | wl-copy
 }
 
-shot5 () {
-	countdown '5'
-	sleep 1 && cd ${dir} && maim -u -f png | copy_shot
-	notify_view
+savearea () {
+	slurp | grim -g -
 }
 
-shot10 () {
-	countdown '10'
-	sleep 1 && cd ${dir} && maim -u -f png | copy_shot
-	notify_view
+savescreen () {
+	grim
 }
 
 shotwin () {
-	cd ${dir} && maim -u -f png -i `xdotool getactivewindow` | copy_shot
-	notify_view
+	swaymsg -t get_tree | jq -r '.. | select(.focused?) | .rect | "\(.x),\(.y) \(.width)x\(.height)"' | grim -g - - | wl-copy
 }
 
 shotarea () {
-	cd ${dir} && maim -u -f png -s -b 2 -c 0.35,0.55,0.85,0.25 -l | copy_shot
-	notify_view
+	slurp | grim -g - - | wl-copy
 }
 
 # Execute Command
@@ -136,9 +78,9 @@ run_cmd() {
 	elif [[ "$1" == '--opt3' ]]; then
 		shotwin
 	elif [[ "$1" == '--opt4' ]]; then
-		shot5
+		savearea
 	elif [[ "$1" == '--opt5' ]]; then
-		shot10
+		savescreen
 	fi
 }
 

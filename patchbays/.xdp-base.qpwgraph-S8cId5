@@ -1,0 +1,22 @@
+<!DOCTYPE patchbay>
+<patchbay name="base" version="0.6.1">
+ <items>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Tiger Lake-LP Smart Sound Technology Audio Controller Digital Microphone" port="Digital Microphone:capture_FR"/>
+   <input node="pw-loopback-2312" port="pw-loopback-2312:input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="PulseAudio Volume Control-7" port="PulseAudio Volume Control:monitor_FL"/>
+   <input node="pw-loopback-2312" port="pw-loopback-2312:input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="PulseAudio Volume Control-7" port="PulseAudio Volume Control:monitor_FR"/>
+   <input node="pw-loopback-2312" port="pw-loopback-2312:input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Tiger Lake-LP Smart Sound Technology Audio Controller Digital Microphone" port="Digital Microphone:capture_FL"/>
+   <input node="pw-loopback-2312" port="pw-loopback-2312:input_FL"/>
+  </item>
+ </items>
+</patchbay>
+

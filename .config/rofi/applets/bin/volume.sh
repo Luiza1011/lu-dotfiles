@@ -28,7 +28,7 @@ else
 	stext='Mute'
 	sicon=''
 fi
-
+s
 # Microphone Info
 amixer get Capture | grep '\[on\]' &>/dev/null
 if [[ "$?" == 0 ]]; then
@@ -100,15 +100,15 @@ run_rofi() {
 # Execute Command
 run_cmd() {
 	if [[ "$1" == '--opt1' ]]; then
-		amixer -Mq set Master,0 5%+ unmute
+		amixer -Mq set Master,0 10%+ unmute
 	elif [[ "$1" == '--opt2' ]]; then
 		amixer set Master toggle
 	elif [[ "$1" == '--opt3' ]]; then
-		amixer -Mq set Master,0 5%- unmute
+		amixer -Mq set Master,0 10%- unmute
 	elif [[ "$1" == '--opt4' ]]; then
 		amixer set Capture toggle
 	elif [[ "$1" == '--opt5' ]]; then
-		pavucontrol
+		sh ~/.local/lu-dotfiles/components/toggles/pavucontrol-scratchpad
 	fi
 }
 

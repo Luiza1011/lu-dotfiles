@@ -185,7 +185,7 @@
     },
 
 "battery": {
-        "on-click": "~/.local/lu-dotfiles/.config/rofi/scripts/powermenu_t1",
+        "on-click": "~/.local/lu-dotfiles/.config/rofi/scripts/powermenu_t3",
         "states": {
             "good": 95,
             "warning": 30,

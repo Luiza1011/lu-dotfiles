@@ -20,7 +20,7 @@ host=`hostname`
 # Options
 shutdown=' Shutdown'
 reboot=' Reboot'
-lock=' kill magma'
+lock=' Lock'
 suspend=' Suspend'
 logout=' Logout'
 yes=' Yes'
@@ -95,7 +95,11 @@ case ${chosen} in
 		run_cmd --reboot
         ;;
     $lock)
-		killall magma
+		if [[ -x '/usr/bin/betterlockscreen' ]]; then
+			betterlockscreen -l
+		elif [[ -x '/usr/bin/i3lock' ]]; then
+			i3lock
+		fi
         ;;
     $suspend)
 		run_cmd --suspend
