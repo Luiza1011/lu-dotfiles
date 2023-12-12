@@ -177,7 +177,7 @@
     "on-click": "activate",
     "on-click-right": "minimize",
     "on-click-middle": "maximize",
-    "ignore-list": ["pavucontrol","Spotify","nemo"],},
+    "ignore-list": ["pavucontrol","nemo"],},
 
 "sway/window": {
     "format": "  {} ",
@@ -240,3 +240,4 @@
 	// "ignored-players": ["firefox"]
     },
 }
+how wui

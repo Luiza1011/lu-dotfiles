@@ -43,3 +43,5 @@ exec pavucontrol
 exec spotifyd -u elatetunic@gmail.com --use-mpris true -d PC-DAEMON --device-type speaker --volume-normalisation --autoplay --use-keyring
 
 exec pw-loopback --capture-props='node.target=youroutput' --playback-props='media.class=Audio/Source node.name=virtmic node.description="audio-loopback(use qpwgraph)"'
+
+exec flatpak run org.rncbc.qpwgraph -m   
