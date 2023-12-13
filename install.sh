@@ -54,6 +54,7 @@ flatpak install flathub io.mpv.Mpv                                              
 flatpak install flathub org.rncbc.qpwgraph                                      -y --reinstall --system
 flatpak install flathub flatpak install flathub org.gnome.FontManager           -y --reinstall --system
 flatpak install flathub io.github.giantpinkrobots.varia                         -y --reinstall --system
+flatpak install flathub dev.vencord.Vesktop                                     -y --reinstall --system
 
 #containers
 toolbox create --image quay.io/toolbx-images/archlinux-toolbox:latest arch-box
