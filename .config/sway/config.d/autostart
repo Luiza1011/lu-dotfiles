@@ -10,6 +10,7 @@ exec swaync
 
 # Network Applet
 exec nm-applet --indicator
+exec blueman-applet
 
 # GTK3 applications take a long time to start
 
