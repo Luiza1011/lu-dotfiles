@@ -12,6 +12,8 @@ exec swaync
 exec nm-applet --indicator
 exec blueman-applet
 
+exec xdg-open ~/.config/autostart/*
+
 # GTK3 applications take a long time to start
 
 exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
@@ -25,9 +27,9 @@ exec ~/.local/lu-dotfiles/.config/sway/scripts/sway-systemd/assign-cgroups.py
 #exec dex -a -s /etc/xdg/autostart/:~/.config/autostart/  
 
 exec autotiling
-exec flatpak run dev.vencord.Vesktop
-exec flatpak run com.discordapp.Discord
-exec flatpak run com.valvesoftware.Steam -nochatui -nofriendsui -silent
+# exec flatpak run dev.vencord.Vesktop
+# exec flatpak run com.discordapp.Discord
+exec steam -nochatui -nofriendsui -silent
 # exec input-remapper-control --command autoload
 # exec input-remapper-service
 # exec foot -e sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080 && sudo iptables -t nat -I OUTPUT -p tcp -d 127.0.0.1 --dport 80 -j REDIRECT --to-ports 8080
@@ -45,4 +47,4 @@ exec spotifyd -u elatetunic@gmail.com --use-mpris true -d PC-DAEMON --device-typ
 
 exec pw-loopback --capture-props='node.target=youroutput' --playback-props='media.class=Audio/Source node.name=virtmic node.description="audio-loopback(use qpwgraph)"'
 
-exec flatpak run org.rncbc.qpwgraph -m   
+#exec flatpak run org.rncbc.qpwgraph -m   
