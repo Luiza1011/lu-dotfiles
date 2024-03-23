@@ -23,6 +23,8 @@ echo 'linking .icons folder to user folder'
 
 sh ~/.local/lu-dotfiles/components/homebrew-install
 
-rpm-ostree install https://downloads.vivaldi.com/stable/vivaldi-stable-6.6.3271.53-1.x86_64.rpm
+python3 -m pip install hyfetch
+
+python3 -m pip install -U demucs
 
 reboot
