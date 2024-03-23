@@ -27,4 +27,8 @@ python3 -m pip install hyfetch
 
 python3 -m pip install -U demucs
 
+wget -P ~/.local/bin https://raw.githubusercontent.com/odziom91/libadwaita-theme-changer/main/libadwaita-tc.py
+
+chmod +x ~/.local/bin/libadwaita-tc.py
+
 reboot
