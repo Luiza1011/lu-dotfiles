@@ -12,7 +12,7 @@ exec swaync
 exec nm-applet --indicator
 exec blueman-applet
 
-exec xdg-open ~/.config/autostart/*
+exec for file in ~/.config/autostart/*.desktop; do xdg-open "$file"; done
 
 # GTK3 applications take a long time to start
 
