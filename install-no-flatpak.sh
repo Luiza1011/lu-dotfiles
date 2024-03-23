@@ -15,8 +15,8 @@ echo 'linking rofi to .config'
 ln -r -s ~/.local/lu-dotfiles/.zshrc ~/
 echo 'linking .zshrc to user folder'
 ln -r -s ~/.local/lu-dotfiles/.fonts/ ~/
-echo 'linking .fonts folder to user folder'
-ln -r -s ~/.local/lu-dotfiles/.themes/ ~/
+#echo 'linking .fonts folder to user folder'
+#ln -r -s ~/.local/lu-dotfiles/.themes/ ~/
 echo 'linking .themes folder to user folder'
 ln -r -s ~/.local/lu-dotfiles/.icons/ ~/
 echo 'linking .icons folder to user folder'
