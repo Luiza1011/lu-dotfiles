@@ -66,7 +66,7 @@
 //========================== LAUNCHER MODULES ========================//
 
   "custom/launcher":{
-    "format":"󰣇 Menu",
+    "format":" 󰣛 Applications",
     "on-click": "~/.local/lu-dotfiles/.config/rofi/scripts/launcher_t3",
     "on-click-right": "~/lu-dotfiles/.config/rofi/scripts/extra/Utils",
     "on-click-middle": "killall waybar && waybar"

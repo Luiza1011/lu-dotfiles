@@ -1,16 +1,18 @@
-    *{border-radius: 100px; font-family: URW Gothic, Symbols Nerd Font mono; min-height: 15px;}
+    *{border-radius: 4px; font-family: URW Gothic, Symbols Nerd Font mono; min-height: 15px;}
 
 window#waybar.top-bar {
 /*    background: linear-gradient(to right, rgba(6, 23, 46, 0.377),rgba(16, 20, 23, 0.418));*/
     background: rgba(10,10,10,0.4);
     /*border-bottom: 1px solid;
     border-color: rgba(175,212,223,0.2);*/
+    border-radius: 100px;
     padding-left: 8px;
     padding-right: 8px;
     padding-top: 2px;
     padding-bottom: 2px;
     font-size: 16px;}
 window#waybar.bottom-bar {
+    border-radius: 100px;
     padding-left: 8px;
     padding-right: 8px;
     padding-top: 2px;
@@ -26,7 +28,8 @@ window#waybar.bottom-bar {
 /*CUSTOM/ WAYBAR PLUGINS*/
 
 #custom-launcher{
-    color: #f9ac7f;
+    /*font-size: 25px;*/
+    color: #d4affc;
     background-color: rgba(24, 24, 24, 0.0);
     border-radius: 100px;
     /*border: 1px solid;
@@ -204,6 +207,7 @@ window#waybar.bottom-bar {
 #taskbar button.active{    
     background-color: rgba(24, 24, 24, 0.0);
     color: #88ddff;
+    border: #88ddff 1px;
     border-radius: 100px;
     margin-left: 1px;
     margin-right: 1px;
