@@ -56,7 +56,7 @@
 
  "custom/scratchpad_indicator": {
   "interval": 3,
-  "exec": "swaymsg -t get_tree | ~/lu-dotfiles/components/waybar-script/scratchpad-indicator",
+  "exec": "swaymsg -t get_tree | ~/.local/lu-dotfiles/components/waybar-script/scratchpad-indicator",
   "format": "{} ",
   "on-click": "swaymsg 'scratchpad show'",
   "on-click-right": "swaymsg 'move scratchpad'"
@@ -96,11 +96,13 @@
 
 "custom/next":{
   "format": "  ",
+  "exec": "playerctl -a metadata --format '{\"text\": \"{{shuffle}}\", \"alt\": \"{{shuffle}}\", \"class\": \"{{shuffle}}\"}' -F",
   "on-click": "playerctl next",
 },
 
 "custom/previous": {  
   "format": "  ",
+  "exec": "playerctl -a metadata --format '{\"text\": \"{{shuffle}}\", \"alt\": \"{{shuffle}}\", \"class\": \"{{shuffle}}\"}' -F",
   "on-click": "playerctl previous",
 }, 
 
@@ -150,7 +152,7 @@
     "default": "",
   },
   "sort-by-number": true,
-  "smooth-scrolling-threshold": 2,
+  "smooth-scrolling-threshold": 1,
   "persistent_workspaces": {
 //    "1":[],
 //    "2":[],
@@ -226,8 +228,8 @@
     },
 
 "mpris": {
-	"format": "DEFAULT: {player_icon} {dynamic}",
-	"format-paused": "DEFAULT: {status_icon} <i>{dynamic}</i>",
+	"format": "{player_icon} {dynamic}",
+	"format-paused": "{status_icon} <i>{dynamic}</i>",
 	"player-icons": {
 		"default": "▶",
 		"mpv": "",
@@ -240,4 +242,3 @@
 	// "ignored-players": ["firefox"]
     },
 }
-how wui

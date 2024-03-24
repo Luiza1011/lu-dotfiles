@@ -2,19 +2,37 @@
 
 {
 	"mode": "dock",
-	"name": "bottom-bar",
+	"name": "top-bar",
 	"layer": "top",
-	"position":"bottom",
+	"position":"top",
 	"width":0,
 	"spacing": 0,
 	"fixed-center": true,
 	"margin-left": 0,
 	"margin-right": 0,
 	
-		"modules-left": ["custom/launcher","sway/workspaces"],
-		"modules-center": ["wlr/taskbar"],
-		"modules-right": ["tray","custom/notification","pulseaudio","battery","clock"],
+		"modules-left": ["custom/launcher","sway/window"],
+		"modules-center": ["custom/loop","custom/previous","custom/media","custom/next","custom/shuffle"],
+		"modules-right": ["custom/notification","battery","clock",],
 	
 	"include": "~/.local/lu-dotfiles/components/waybar-components/Module.json",
 	},
+
+	{
+		"mode": "dock",
+		"name": "bottom-bar",
+		"layer": "top",
+		"position":"bottom",
+		"width":0,
+		"spacing": 0,
+		"fixed-center": true,
+		"margin-left": 0,
+		"margin-right": 0,
+		
+			"modules-left": ["sway/workspaces"],
+			"modules-center": ["wlr/taskbar"],
+			"modules-right": ["tray","pulseaudio"],
+		
+		"include": "~/.local/lu-dotfiles/components/waybar-components/Module.json",
+		},
 ]

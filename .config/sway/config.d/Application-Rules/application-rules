@@ -3,6 +3,7 @@ include $HOME/.local/lu-dotfiles/.config/sway/config.d/keywords
 #app_id rules
 for_window [app_id="foot"] floating enabled, sticky enable, resize set width 30 ppt height 20 ppt
 for_window [app_id="file-roller"] floating enabled
+for_window [app_id="gscreenshot"] floating enabled
 
 #class rules { for_window [class=""] }
 for_window [class="firefox"] floating disabled

@@ -31,5 +31,5 @@ set $powermenu  ~/.local/lu-dotfiles/.config/rofi/scripts/powermenu_t1
 set $run        ~/.local/lu-dotfiles/.config/rofi/scripts/extra/runner
 set $windows    ~/.local/lu-dotfiles/.config/rofi/scripts/extra/windows
 set $workspaces ~/.local/lu-dotfiles/.config/rofi/scripts/extra/workspaces
-set $screenshot ~/.local/lu-dotfiles/.config/rofi/applets/bin/screenshot.sh
+set $screenshot gscreenshot
 set $utils      ~/.local/lu-dotfiles/.config/rofi/scripts/extra/Utils
