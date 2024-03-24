@@ -27,7 +27,9 @@ exec ~/.local/lu-dotfiles/.config/sway/scripts/sway-systemd/assign-cgroups.py
 #exec dex -a -s /etc/xdg/autostart/:~/.config/autostart/  
 
 exec autotiling
-# exec flatpak run dev.vencord.Vesktop
+ exec flatpak run dev.vencord.Vesktop
+ exec flatpak run org.ferdium.Ferdium
+ exec easyeffect --gapplication-service
 # exec flatpak run com.discordapp.Discord
 exec steam -nochatui -nofriendsui -silent
 # exec input-remapper-control --command autoload
