@@ -16,7 +16,7 @@
 	
 		"modules-left": ["custom/launcher","custom/separator","sway/window"],
 		"modules-center": ["custom/loop","custom/previous","custom/media","custom/next","custom/shuffle"],
-		"modules-right": ["tray","custom/separator","custom/notification","custom/separator","pulseaudio","custom/separator","battery","custom/separator","clock",],
+		"modules-right": ["tray","custom/notification","custom/separator","pulseaudio","custom/separator","battery","custom/separator","clock",],
 	
 	"include": "~/.local/lu-dotfiles/components/waybar-components/Module.json",
 	},
