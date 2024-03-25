@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+if pgrep "easyeffects";
+    then 
+        swaymsg [app_id="com.github.wwmm.easyeffects"] scratchpad show, resize set width 80 ppt height  70 ppt
+    else
+        easyeffects && swaymsg [app_id="com.github.wwmm.easyeffects"] scratchpad show, resize set width 80 ppt height  70 ppt
+fi

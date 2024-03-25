@@ -180,7 +180,7 @@
     "on-click": "activate",
     "on-click-right": "minimize",
     "on-click-middle": "maximize",
-    "ignore-list": ["pavucontrol","nemo"],},
+    "ignore-list": ["pavucontrol","nemo", "com.github.wwmm.easyeffects",],},
 
 "sway/window": {
     "format": "  {} ",
@@ -224,6 +224,7 @@
   },
   "scroll-step": 1,
   "on-click": "pamixer -t",
+  "on-click-middle": "sh ~/.local/lu-dotfiles/components/toggles/easyeffects-scratchpad",
   "on-click-right": "sh ~/.local/lu-dotfiles/components/toggles/pavucontrol-scratchpad",
   "ignored-sinks": ["Easy Effects Sink"]
     },
