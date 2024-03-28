@@ -67,19 +67,9 @@
 
   "custom/launcher":{
     "format":" 󰣛 Applications",
-    "on-click": "~/.local/lu-dotfiles/.config/rofi/scripts/launcher_t3",
+    "on-click": "~/.local/lu-dotfiles/rofi-custom/Launcher/launcher.sh",
     "on-click-right": "~/lu-dotfiles/.config/rofi/scripts/extra/Utils",
     "on-click-middle": "killall waybar && waybar"
-    },
-
-  "custom/azote": {
-    "format":"󰏜",
-    "on-click": "azote"
-    },
-
-  "custom/droidcam":{
-    "format":"",
-      "on-click": "/home/luiza/Lu-dots/Extra/scripts/Droidcamshit",
     },
 
 //========================== MEDIA MODULES ========================//
@@ -188,7 +178,7 @@
     },
 
 "battery": {
-        "on-click": "~/.local/lu-dotfiles/.config/rofi/scripts/powermenu_t3",
+        "on-click": "~/.local/lu-dotfiles/rofi-custom/Launcher/powermenu.sh",
         "states": {
             "good": 95,
             "warning": 30,

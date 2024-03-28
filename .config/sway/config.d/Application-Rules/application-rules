@@ -18,6 +18,8 @@ for_window [app_id="org.prismlauncher.PrismLauncher"] floating enable
 #title rules
 for_window [title="Minecraft*"] floating disabled
 for_window [title="Picture-in-Picture"] floating enable, sticky enable
+for_window [title="Picture in picture"] floating enable, sticky enable
+for_window [title="MiniPlayer"] floating enable, sticky enable
 
 
 

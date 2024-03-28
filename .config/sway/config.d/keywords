@@ -18,16 +18,16 @@ set $mic_mute $(pactl set-source-mute @DEFAULT_SOURCE@ toggle && pactl get-sourc
 
 #programs
 set $term terminator
-set $browser firefox
+set $browser vivaldi_stable
 set $files nemo
 set $image flatpak run org.gimp.GIMP
 set $text flatpak run com.visualstudio.code
 
 #rofi
-set $drun       ~/.local/lu-dotfiles/.config/rofi/scripts/launcher_t3
+set $drun       ~/.local/lu-dotfiles/rofi-custom/Launcher/launcher.sh
 set $mpd        ~/.local/lu-dotfiles/.config/rofi/scripts/extra/mpd
 set $playerctl  ~/.local/lu-dotfiles/.config/rofi/scripts/extra/playerctl
-set $powermenu  ~/.local/lu-dotfiles/.config/rofi/scripts/powermenu_t1
+set $powermenu  ~/.local/lu-dotfiles/rofi-custom/Launcher/powermenu.sh
 set $run        ~/.local/lu-dotfiles/.config/rofi/scripts/extra/runner
 set $windows    ~/.local/lu-dotfiles/.config/rofi/scripts/extra/windows
 set $workspaces ~/.local/lu-dotfiles/.config/rofi/scripts/extra/workspaces
