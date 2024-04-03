@@ -7,7 +7,7 @@ include $HOME/.local/lu-dotfiles/.config/sway/config.d/keywords2
     bindsym $super+f12 exec $powermenu
 
 
-    bindsym $super+z exec nwg-drawer
+    bindsym $super+z exec $drun
     bindsym $alt+q exec $windows
     bindsym print exec $screenshot
     bindsym $alt+$super+Tab exec $workspaces

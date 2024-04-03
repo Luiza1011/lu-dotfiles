@@ -1,33 +1,13 @@
 #!/usr/bin/env sh
-
-ln -r -s ~/.local/lu-dotfiles/.config/sway/ ~/.config/
-echo 'linking sway to .config'
-
-ln -r -s ~/.local/lu-dotfiles/.config/swaync/ ~/.config/
-echo 'linking swaync to .config'
-
-ln -r -s ~/.local/lu-dotfiles/.config/waybar/ ~/.config/
-echo 'linking waybar to .config'
-
-ln -r -s ~/.local/lu-dotfiles/.config/rofi/ ~/.config/
-echo 'linking rofi to .config'
-
-ln -r -s ~/.local/lu-dotfiles/.zshrc ~/
-echo 'linking .zshrc to user folder'
-ln -r -s ~/.local/lu-dotfiles/.fonts/ ~/
-#echo 'linking .fonts folder to user folder'
-#ln -r -s ~/.local/lu-dotfiles/.themes/ ~/
-echo 'linking .themes folder to user folder'
-ln -r -s ~/.local/lu-dotfiles/.icons/ ~/
-echo 'linking .icons folder to user folder'
-
-sh ~/.local/lu-dotfiles/components/homebrew-install
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 python3 -m pip install hyfetch
 
 python3 -m pip install -U demucs
 
-wget -P ~/.local/bin https://raw.githubusercontent.com/odziom91/libadwaita-theme-changer/main/libadwaita-tc.py
+python3 -m pip install autotiling
+
+wget -P ~/.local/bin https://raw.githubusercontent.com/luizansounds/system-wide-gtk-theme-changer/main/theme_changer.py
 
 chmod +x ~/.local/bin/libadwaita-tc.py
 

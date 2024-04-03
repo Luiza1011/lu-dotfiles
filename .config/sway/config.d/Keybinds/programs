@@ -3,7 +3,7 @@ include $HOME/.local/lu-dotfiles/.config/sway/config.d/keywords
 #programs
 
 bindsym $super+Shift+f      exec $files
-bindsym $super+w            exec $browser
+bindsym $super+w            exec vivaldi
 #bindsym $super+f1           exec flatpak run com.discordapp.Discord
 bindsym $super+f1           exec vencorddesktop
 bindsym $super+Shift+f1     exec flatpak run de.shorsh.discord-screenaudio

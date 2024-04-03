@@ -18,7 +18,7 @@ set $mic_mute $(pactl set-source-mute @DEFAULT_SOURCE@ toggle && pactl get-sourc
 
 #programs
 set $term terminator
-set $browser vivaldi_stable
+set $browser vivaldi
 set $files nemo
 set $image flatpak run org.gimp.GIMP
 set $text flatpak run com.visualstudio.code
