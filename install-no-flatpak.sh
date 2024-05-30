@@ -3,7 +3,7 @@
 
 python3 -m pip install hyfetch
 
-python3 -m pip install -U demucs
+#python3 -m pip install -U demucs
 
 python3 -m pip install autotiling
 
