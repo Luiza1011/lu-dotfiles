@@ -23,38 +23,7 @@ echo 'linking .icons folder to user folder'
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
-flatpak install flathub com.calibre_ebook.calibre                               -y --reinstall --system
-flatpak install flathub com.discordapp.Discord                                  -y --reinstall --system
-flatpak install flathub com.github.Flacon                                       -y --reinstall --system
-flatpak install flathub com.github.GradienceTeam.Gradience                      -y --reinstall --system
-flatpak install flathub com.github.taiko2k.tauonmb                              -y --reinstall --system
-flatpak install flathub com.github.tchx84.Flatseal                              -y --reinstall --system
-flatpak install flathub com.spotify.Client                                      -y --reinstall --system
-flatpak install flathub com.tomjwatson.Emote                                    -y --reinstall --system
-flatpak install flathub com.transmissionbt.Transmission                         -y --reinstall --system
-flatpak install flathub com.usebottles.bottles                                  -y --reinstall --system
-flatpak install flathub com.valvesoftware.Steam                                 -y --reinstall --system
-flatpak install flathub com.visualstudio.code                                   -y --reinstall --system
-flatpak install flathub io.github.dweymouth.supersonic                          -y --reinstall --system
-flatpak install flathub io.github.polypixeldev.Polypass                         -y --reinstall --system
-flatpak install flathub net.pcsx2.PCSX2                                         -y --reinstall --system
-flatpak install flathub org.DolphinEmu.dolphin-emu                              -y --reinstall --system
-flatpak install flathub org.citra_emu.citra                                     -y --reinstall --system
-flatpak install flathub org.ferdium.Ferdium                                     -y --reinstall --system
-flatpak install flathub org.gimp.GIMP                                           -y --reinstall --system
-flatpak install flathub org.gnome.Boxes                                         -y --reinstall --system
-flatpak install flathub org.gnome.Boxes.Extension.OsinfoDb                      -y --reinstall --system
-flatpak install flathub org.gtk.Gtk3theme.adw-gtk3                              -y --reinstall --system
-flatpak install flathub org.gtk.Gtk3theme.adw-gtk3-dark                         -y --reinstall --system
-flatpak install flathub runtime/org.kde.KStyle.Adwaita/x86_64/6.5               -y --reinstall --system
-flatpak install flathub runtime/org.kde.KStyle.Kvantum/x86_64/latest            -y --reinstall --system
-flatpak install flathub runtime/org.kde.PlatformTheme.QGnomePlatform/x86_64/6.6 -y --reinstall --system
-flatpak install flathub org.prismlauncher.PrismLauncher                         -y --reinstall --system 
-flatpak install flathub io.mpv.Mpv                                              -y --reinstall --system
-flatpak install flathub org.rncbc.qpwgraph                                      -y --reinstall --system
-flatpak install flathub flatpak install flathub org.gnome.FontManager           -y --reinstall --system
-flatpak install flathub io.github.giantpinkrobots.varia                         -y --reinstall --system
-flatpak install flathub dev.vencord.Vesktop                                     -y --reinstall --system
+flatpak install flathub io.podman_desktop.PodmanDesktop it.mijorus.gearlever com.rtosta.zapzap com.pokemmo.PokeMMO net.kuribo64.melonDS org.keepassxc.KeePassXC com.vivaldi.Vivaldi io.github.kotatogram dev.vencord.Vesktop org.gnome.FontManager io.mpv.Mpv org.prismlauncher.PrismLauncher io.github.dweymouth.supersonic com.visualstudio.code com.valvesoftware.Steam com.calibre_ebook.calibre com.github.Flacon com.github.GradienceTeam.Gradience com.github.taiko2k.tauonmb com.github.tchx84.Flatseal com.spotify.Client com.tomjwatson.Emote com.transmissionbt.Transmission flathub com.usebottles.bottles  -y --reinstall --system
 
 #containers
 toolbox create --image quay.io/toolbx-images/archlinux-toolbox:latest arch-box
