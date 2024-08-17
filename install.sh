@@ -20,12 +20,12 @@ ln -r -s ~/.local/lu-dotfiles/.zshrc ~/
 echo 'linking .zshrc to user folder'
 ln -r -s ~/.local/lu-dotfiles/.fonts/ ~/
 echo 'linking .fonts folder to user folder'
-ln -r -s ~/.local/lu-dotfiles/.themes/ ~/
+cp ~/.local/lu-dotfiles/.themes/ ~/
 echo 'linking .themes folder to user folder'
-ln -r -s ~/.local/lu-dotfiles/.icons/ ~/
+cp ~/.local/lu-dotfiles/.icons/ ~/
 echo 'linking .icons folder to user folder'
 
 #containers
 toolbox create --image quay.io/toolbx-images/archlinux-toolbox:latest arch-box
 
-reboot
+sudo nvim /etc/passwd
